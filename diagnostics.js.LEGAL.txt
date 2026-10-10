@@ -1,0 +1,46 @@
+//!! seems like this mimics the radius of the ball -> replace with radius where possible?
+//!! solely responsible for ball through playfield?? check other places, too (radius*2??)
+//!! magic
+//!!
+//!! weight this with ratio of elements going to middle vs left&right! (avoids volume split that goes directly through object)
+//!! meh
+//!! omit, as already calced?!
+//!! 0.05f = paranoia
+//!! >= 0.f causes infinite loop
+//!! also change if wiring of moment of inertia happens (see ctor)
+//!! = ball diameter
+//!! assumes ball radius 25
+//!! note:  serious optimization opportunity here,
+//!! braindead design, actually fills up "vertices"
+//!! this is not efficient at all, use native triangle-soup directly somehow
+//!! Hit-walls are still done via 2D line segments with only a single lower and upper border, so the wall will always reach below and above the actual ramp -between- two points of the ramp
+//!! use ballsize
+//!! adapt hacky code in the function if changing the "6" here
+//!! hack, adapt if changing detail level for hitshape
+
+Bundled license information:
+
+ieee754/index.js:
+  /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+buffer/index.js:
+  /*!
+   * The buffer module from node.js, for the browser.
+   *
+   * @author   Feross Aboukhadijeh <https://feross.org>
+   * @license  MIT
+   */
+
+safe-buffer/index.js:
+  /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+assert/build/internal/util/comparisons.js:
+  /*!
+   * The buffer module from node.js, for the browser.
+   *
+   * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+   * @license  MIT
+   */
+
+three/build/three.module.js:
+  //!\ DECLARE ALIAS AFTER assign prototype !
