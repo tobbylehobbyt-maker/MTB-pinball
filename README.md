@@ -2,7 +2,7 @@
 
 [Jouer sur mobile ou ordinateur](https://tobbylehobbyt-maker.github.io/MTB-pinball/)
 
-Batteurs tactiles gauche/droite ; maintenir puis relâcher le lanceur. Sur ordinateur : A/D ou flèches, Espace pour lancer, P pour pause. Le son démarre après une interaction.
+En plein écran sur téléphone et tablette : maintenir le côté gauche ou droit du plateau, ou les deux simultanément, pour les batteurs ; maintenir puis relâcher le lanceur. Sur ordinateur : A/D ou flèches, Espace pour lancer, P pour pause. Le son démarre après une interaction.
 
 Le bouton **Classement** est intégré au jeu. Le classement Supabase est connecté : voir [SUPABASE.md](SUPABASE.md) et [supabase-schema.sql](supabase-schema.sql). Les scores sont envoyés volontairement en fin de partie. Arcade et Classique ont des records séparés.
 
