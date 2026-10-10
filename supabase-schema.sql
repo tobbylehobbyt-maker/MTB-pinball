@@ -38,5 +38,5 @@ begin
   where forest_scores.submitted_at < now()-interval '10 seconds';
 end;
 $$;
-revoke all on function public.forest_submit_score(text,bigint,text) from public;
+revoke all on function public.forest_submit_score(text,bigint,text) from public, anon;
 grant execute on function public.forest_submit_score(text,bigint,text) to authenticated;
